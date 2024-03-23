@@ -12,6 +12,14 @@ body {
     align-items: center;
     flex-direction: column; /* Align items vertically */
     height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add space between the content and buttons */
 }
 
 .button {
@@ -28,43 +36,83 @@ body {
     position: relative; /* Make the button position relative */
 }
 
-.github-button {
-    background-color: #6f42c1; /* Purple */
+.copy-button {
+    background-color: #CC3116; /* Red */
 }
 
 .webstore-button {
-    background-color: #6f42c1; /* Purple */
+    background-color: #E4B260; /* Orange */
 }
 
-.website-button {
-    background-color: #FF2A5E; /* Red */
+.webpage-button {
+    background-color: #87CEFA; /* Blue */
+}
+
+.github-button {
+    background-color: #C380D0; /* Purple */
+}
+
+.gray-button {
+    background-color: #555555; /* Gray */
 }
 
 </style>
 </head>
 <body>
 
-<!-- Button to open GitHub page -->
-<button class="button github-button" onclick="openGitHub()">TikTok Edits</button>
+<div class="content">
+    <!-- Button to trigger copying -->
+    <button class="button copy-button" onclick="copyIP()">Szerver IP cím másolása</button>
 
-<!-- Button to open webstore -->
-<button class="button webstore-button" onclick="openWebstore()">TikTok Official</button>
+    <!-- Button to open website -->
+    <button class="button webpage-button" onclick="openWebsite()">BlobMC Honlap</button>
 
-<!-- Button to open website -->
-<button class="button website-button" onclick="openWebsite()">Youtube Official</button>
+    <!-- Button to open webstore -->
+    <button class="button webstore-button" onclick="openWebstore()">BlobMC Webáruház</button>
+
+    <!-- Button to open GitHub page -->
+    <button class="button github-button" onclick="openGitHub()">Közösség</button>
+    
+    <!-- Button to go back -->
+    <button class="button gray-button" onclick="goBack()">Vissza</button>
+</div>
 
 <script>
-function openGitHub() {
-    window.open("https://www.tiktok.com/@blobmcedits", "_blank");
-    // Replace "your-username" and "your-repository" with your GitHub username and repository name
-}
-
-function openWebstore() {
-    window.open("https://www.tiktok.com/@blobmchu", "_blank");
+function copyIP() {
+    var serverIp = "195.228.230.105:25574";
+  
+    // Create a temporary text area element
+    var tempTextArea = document.createElement("textarea");
+    tempTextArea.value = serverIp;
+  
+    // Append the text area element to the body
+    document.body.appendChild(tempTextArea);
+  
+    // Select and copy the text from the text area element
+    tempTextArea.select();
+    document.execCommand("copy");
+  
+    // Remove the temporary text area element
+    document.body.removeChild(tempTextArea);
+  
+    // Alert the copied text
+    alert("BlobMC szerver IP másolva, illeszd be ahova akarod!");
 }
 
 function openWebsite() {
-    window.open("https://www.youtube.com/@Blobmchu", "_blank");
+    window.open("https://www.blobmc.hu", "_blank");
+}
+
+function openWebstore() {
+    window.open("https://blobmc-bolt.tebex.io", "_blank");
+}
+
+function openGitHub() {
+    window.location.href = "https://veghlacuska.github.io/BlobMC/";
+}
+
+function goBack() {
+    window.location.href = "https://veghlacuska.github.io/BlobMC/";
 }
 </script>
 
