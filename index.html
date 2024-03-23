@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BlobMC Community</title>
+<title>BlobMC Dashboard</title>
 <style>
 body {
     background-color: #333333; /* Light Gray */
@@ -28,41 +28,43 @@ body {
     position: relative; /* Make the button position relative */
 }
 
-.webstore-button {
-    background-color: #FF2459; /* Red */
-}
-
-.webpage-button {
-    background-color: #461F68; /* Dark */
-}
-
 .github-button {
-    background-color: #461F68; /* Dark */
+    background-color: #6f42c1; /* Purple */
+}
+
+.webstore-button {
+    background-color: #6f42c1; /* Purple */
+}
+
+.website-button {
+    background-color: #6f42c1; /* Purple */
 }
 
 </style>
 </head>
 <body>
 
-<!-- Button to open website -->
-<button class="button webpage-button" onclick="openWebsite()">Youtube</button>
+<!-- Button to open GitHub page -->
+<button class="button github-button" onclick="openGitHub()">TikTok Edits</button>
 
 <!-- Button to open webstore -->
-<button class="button webstore-button" onclick="openWebstore()">Tiktok Official</button>
+<button class="button webstore-button" onclick="openWebstore()">TikTok Official</button>
 
-<!-- Button to open GitHub page -->
-<button class="button github-button" onclick="openGitHub()">Tiktok Edits</button>
+<!-- Button to open website -->
+<button class="button website-button" onclick="openWebsite()">Youtube Official</button>
 
-function openWebsite() {
-    window.open("https://www.youtube.com/@Blobmchu", "_blank");
+<script>
+function openGitHub() {
+    window.open("https://www.tiktok.com/@blobmcedits", "_blank");
+    // Replace "your-username" and "your-repository" with your GitHub username and repository name
 }
 
 function openWebstore() {
     window.open("https://www.tiktok.com/@blobmchu", "_blank");
 }
 
-function openGitHub() {
-    window.open("https://www.tiktok.com/@blobmcedits", "_blank");
+function openWebsite() {
+    window.open("https://www.youtube.com/@Blobmchu", "_blank");
 }
 </script>
 
