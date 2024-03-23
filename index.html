@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BlobMC Dashboard</title>
+<title>BlobMC Community</title>
 <style>
 body {
     background-color: #333333; /* Light Gray */
@@ -12,10 +12,6 @@ body {
     align-items: center;
     flex-direction: column; /* Align items vertically */
     height: 100vh; /* Ensure the body takes up the full height of the viewport */
-}
-
-.image-container {
-    margin-bottom: 20px; /* Add space between the image and buttons */
 }
 
 .button {
@@ -32,78 +28,41 @@ body {
     position: relative; /* Make the button position relative */
 }
 
-.copy-button {
-    background-color: #CC3116; /* Red */
-}
-
 .webstore-button {
-    background-color: #E4B260; /* Orange */
+    background-color: #FF2459; /* Red */
 }
 
 .webpage-button {
-    background-color: #87CEFA; /* Blue */
+    background-color: #461F68; /* Dark */
 }
 
 .github-button {
-    background-color: #C380D0; /* Purple */
+    background-color: #461F68; /* Dark */
 }
 
 </style>
 </head>
 <body>
 
-<!-- Image container -->
-<div class="image-container">
-    <!-- Image link to open in browser -->
-    <a href="https://cdn.discordapp.com/attachments/921768831075102740/1210870417430941757/blobmc1.jpg?ex=66110bf4&is=65fe96f4&hm=c8eb0d3964d8c239f547d7bd22e4047ee7165ca58e5399297001cbc2973cafcc&" target="_blank">
-        <img src="https://cdn.discordapp.com/attachments/921768831075102740/1210870417430941757/blobmc1.jpg?ex=66110bf4&is=65fe96f4&hm=c8eb0d3964d8c239f547d7bd22e4047ee7165ca58e5399297001cbc2973cafcc&" alt="BlobMC Image" style="width: auto; height: auto;">
-    </a>
-</div>
-
-<!-- Button to trigger copying -->
-<button class="button copy-button" onclick="copyIP()">Szerver IP cím másolása</button>
-
 <!-- Button to open website -->
-<button class="button webpage-button" onclick="openWebsite()">BlobMC Honlap</button>
+<button class="button webpage-button" onclick="openWebsite()">Youtube</button>
 
 <!-- Button to open webstore -->
-<button class="button webstore-button" onclick="openWebstore()">BlobMC Webáruház</button>
+<button class="button webstore-button" onclick="openWebstore()">Tiktok Official</button>
 
 <!-- Button to open GitHub page -->
-<button class="button github-button" onclick="openGitHub()">Közösség</button>
-
-<script>
-function copyIP() {
-    var serverIp = "195.228.230.105:25574";
-  
-    // Create a temporary text area element
-    var tempTextArea = document.createElement("textarea");
-    tempTextArea.value = serverIp;
-  
-    // Append the text area element to the body
-    document.body.appendChild(tempTextArea);
-  
-    // Select and copy the text from the text area element
-    tempTextArea.select();
-    document.execCommand("copy");
-  
-    // Remove the temporary text area element
-    document.body.removeChild(tempTextArea);
-  
-    // Alert the copied text
-    alert("BlobMC szerver IP másolva, illeszd be ahova akarod!");
-}
+<button class="button github-button" onclick="openGitHub()">Tiktok Edits</button>
 
 function openWebsite() {
-    window.open("https://www.blobmc.hu", "_blank");
+    window.open("https://www.youtube.com/@Blobmchu", "_blank");
 }
 
 function openWebstore() {
-    window.open("https://blobmc-bolt.tebex.io", "_blank");
+    window.open("https://www.tiktok.com/@blobmchu", "_blank");
 }
 
 function openGitHub() {
-    window.open("https://github.com/veghlacuska/your-repository", "_blank");
+    window.open("https://www.tiktok.com/@blobmcedits", "_blank");
 }
 </script>
 
