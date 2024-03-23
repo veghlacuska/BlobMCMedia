@@ -36,10 +36,6 @@ body {
     position: relative; /* Make the button position relative */
 }
 
-.copy-button {
-    background-color: #CC3116; /* Red */
-}
-
 .webstore-button {
     background-color: #E4B260; /* Orange */
 }
@@ -61,9 +57,6 @@ body {
 <body>
 
 <div class="content">
-    <!-- Button to trigger copying -->
-    <button class="button copy-button" onclick="copyIP()">Szerver IP cím másolása</button>
-
     <!-- Button to open website -->
     <button class="button webpage-button" onclick="openWebsite()">BlobMC Honlap</button>
 
@@ -78,37 +71,16 @@ body {
 </div>
 
 <script>
-function copyIP() {
-    var serverIp = "195.228.230.105:25574";
-  
-    // Create a temporary text area element
-    var tempTextArea = document.createElement("textarea");
-    tempTextArea.value = serverIp;
-  
-    // Append the text area element to the body
-    document.body.appendChild(tempTextArea);
-  
-    // Select and copy the text from the text area element
-    tempTextArea.select();
-    document.execCommand("copy");
-  
-    // Remove the temporary text area element
-    document.body.removeChild(tempTextArea);
-  
-    // Alert the copied text
-    alert("BlobMC szerver IP másolva, illeszd be ahova akarod!");
-}
-
 function openWebsite() {
-    window.open("https://www.blobmc.hu", "_blank");
+    window.location.href = "https://www.tiktok.com/@blobmcedits";
 }
 
 function openWebstore() {
-    window.open("https://blobmc-bolt.tebex.io", "_blank");
+    window.location.href = "https://blobmc-bolt.tebex.io";
 }
 
 function openGitHub() {
-    window.location.href = "https://veghlacuska.github.io/BlobMC/";
+    window.location.href = "https://www.youtube.com/@Blobmchu";
 }
 
 function goBack() {
